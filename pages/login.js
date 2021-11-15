@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import { useEffect } from 'react'
 import tw from "tailwind-styled-components"
 
 
-export default function Home() {
+const Login = () => {
   return (
     <Wrapper>
     <Title>Lifter</Title>
-    <Subtitle>Login to access your account</Subtitle>
+    <SubTitle>Login to access your account</SubTitle>
     <SignInButton onClick={() => signInWithPopup(auth, provider)}>
             Sign In with Google
     </SignInButton>
@@ -15,6 +14,19 @@ export default function Home() {
   )
 }
 
+export default Login
+
 const Wrapper = tw.div`
+
+`
+
+const Title = tw.div`
+
+`
+
+const SubTitle = tw.div`
+
+`
+const SignInButton = tw.div`
 
 `
